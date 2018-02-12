@@ -1,0 +1,823 @@
+{
+  "catalogue": {
+    "name": "Marvel - Cosmic Villains",
+    "id": "b63f-b878-418b-a21f",
+    "authorName": "NeXo",
+    "authorUrl": "http://labibliotecadealfred.blogspot.com.es/",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "c372-4887-df6a-ad9e",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "publications": [{"name": "Leaked", "id": "b63f-b878-pub1"}],
+    "selectionEntries": [
+      {
+        "name": "Dr. Doom",
+        "id": "94a3-2b56-d47e-5670",
+        "collective": false,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "categoryLinks": [{"id": "94a3-2b56-d47e-5670-9861-047c-a40f-d279", "hidden": false, "primary": true, "targetId": "9861-047c-a40f-d279"}],
+        "constraints": [
+          {
+            "id": "8140-abaf-6220-6261",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "94f4-d322-64c3-0a42",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Levels", "typeId": "points", "value": 11}],
+        "infoLinks": [
+          {"id": "2c25-2b37-c83d-647e", "hidden": false, "targetId": "f680-a7b7-520d-b6a9", "type": "rule"},
+          {"id": "e23c-5707-ab4e-681f", "hidden": false, "targetId": "403f-33f0-0378-8744", "type": "rule"},
+          {"id": "f3c5-84df-1450-9b40", "hidden": false, "targetId": "00bd-1971-ec95-81fc", "type": "rule"},
+          {"id": "8509-27d2-d4c8-dd0b", "hidden": false, "targetId": "b3cf-5ee1-863a-f9a0", "type": "rule"},
+          {"id": "7e59-3afb-27a6-1ea9", "hidden": false, "targetId": "7eb2-25c5-1b36-3ed9", "type": "rule"},
+          {"id": "060e-b439-7250-c855", "hidden": false, "targetId": "574b-b466-62c7-a026", "type": "rule"},
+          {"id": "f210-b0b6-c53d-88b3", "hidden": false, "targetId": "7b73-aba5-3e28-de8a", "type": "rule"},
+          {"name": "Stun/2 (Effect)", "id": "1cb1-6ebd-e664-7b09", "hidden": false, "targetId": "3343-98d7-367c-5d89", "type": "rule"},
+          {"name": "New InfoLink", "id": "76fc-d304-b6b7-ddde", "hidden": false, "targetId": "fc2c-f38d-c9b1-2aff", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Attributes",
+            "id": "10b1-03fe-e5e9-2287",
+            "hidden": false,
+            "page": 0,
+            "typeId": "2093f4cd-f669-06c6-0f4f-06037948fe28",
+            "characteristics": [
+              {"name": "Character Name", "$text": "Victor von Doom", "typeId": "05e8c135-ad80-14b3-0017-f9c22029aab7"},
+              {"name": "Power", "$text": "8", "typeId": "911f2847-ecab-772a-37ad-b325a40b19ce"},
+              {"name": "Speed", "$text": "3 / 6 / 10", "typeId": "fd922c18-88be-5191-46b0-1ab589f2ef33"},
+              {"name": "Attack", "$text": "6", "typeId": "49d96d28-c1dc-f977-7bb6-8e1fbe8fe397"},
+              {"name": "Strength", "$text": "3", "typeId": "9ef0bc71-33ab-98cd-26b3-07c55ed7725f"},
+              {"name": "Size", "$text": "2", "typeId": "84a7bbc1-d970-b7b9-2fd5-f174c9fdda90"},
+              {"name": "Agility", "$text": "7", "typeId": "ae357512-6823-3b1d-aebe-2c2c8e52e2e0"},
+              {"name": "Stamina", "$text": "8", "typeId": "4e4daeff-a451-4e80-f5b5-d588866411b4"},
+              {"name": "Willpower", "$text": "10", "typeId": "d6fc-863a-9aaa-271d"},
+              {"name": "Faction", "$text": "Superhuman / Cosmic", "typeId": "d0e0-c03d-1183-cd2e"},
+              {"name": "Alignment", "$text": "Neutral", "typeId": "3d3e-73e5-dd6a-789c"}
+            ]
+          },
+          {
+            "name": "Defenses",
+            "id": "05fe-a004-98e5-978e",
+            "hidden": false,
+            "typeId": "0aed-3bd3-2aaa-6237",
+            "characteristics": [
+              {"name": "Physical", "$text": "16", "typeId": "8ae7-72f6-f278-cb05"},
+              {"name": "Energy", "$text": "16", "typeId": "ecb8-5b30-787e-8ab8"},
+              {"name": "Supernatural", "$text": "19", "typeId": "05fc-2837-01e5-4a01"},
+              {"name": "Mental", "$text": "17", "typeId": "cf20-f678-81bc-115a"}
+            ]
+          },
+          {
+            "name": "Endurance",
+            "id": "e883-abfc-31c5-8c48",
+            "hidden": false,
+            "typeId": "07d6-95ce-9c89-313a",
+            "characteristics": [
+              {"name": "1st Zone", "$text": "6", "typeId": "4a0d-5cb8-6642-b372"},
+              {"name": "2nd Zone", "$text": "4", "typeId": "b848-9544-7a2f-d6a1"},
+              {"name": "3rd zone", "$text": "4 | -2 Power, -1 Attack, - Fly", "typeId": "218b-1f12-55cf-07d5"}
+            ]
+          },
+          {
+            "name": "(B) Gauntlet Strike",
+            "id": "e192-4ac2-4568-7366",
+            "hidden": false,
+            "page": 0,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "2", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Basic", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Physical / Blunt", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "2", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "Melee", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "typeId": "766e-310f-da26-21b0"}
+            ]
+          },
+          {
+            "name": "(B) Mystical Blasts",
+            "id": "c568-768f-6c36-e87f",
+            "hidden": false,
+            "page": 0,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "3", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Basic", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Supernatural / Magic", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "2", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "12", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "typeId": "766e-310f-da26-21b0"}
+            ]
+          },
+          {
+            "name": "(E) Concussive Blasts",
+            "id": "90c8-bc8c-b7ca-9915",
+            "hidden": false,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "2", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Extraordinary", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Energy / Electric", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "1", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "8", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "$text": "Stun/2", "typeId": "766e-310f-da26-21b0"}
+            ]
+          },
+          {
+            "name": "(U) Orb of Doom",
+            "id": "ce55-9c99-d56f-820a",
+            "hidden": false,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "5", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Unique", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Energy", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "4", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "8", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "$text": "Explosive / 4", "typeId": "766e-310f-da26-21b0"}
+            ]
+          },
+          {
+            "name": "(B) Doom's Way",
+            "id": "2b18-56f5-4d8e-410e",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "0", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Basic", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Passive (P)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "4", "typeId": "1926-6aee-b562-0107"},
+              {"name": "Effects", "$text": "Other friendly characters in range cannot use the Overload rule.", "typeId": "0d51-66c7-3432-6402"}
+            ]
+          },
+          {
+            "name": "(U) Mystical Force-Fields",
+            "id": "de30-d9fb-bbf3-5414",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "2", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Unique", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Active (A)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "-", "typeId": "1926-6aee-b562-0107"},
+              {"name": "Effects", "$text": "Until end of the round all Models within 2 '' of this model gain Immunity to Ranged attacks.", "typeId": "0d51-66c7-3432-6402"}
+            ]
+          },
+          {
+            "name": "(U) Teleport",
+            "id": "6fe6-39a9-37a7-fee2",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "2", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Unique", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Active (A)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "-", "typeId": "1926-6aee-b562-0107"},
+              {"name": "Effects", "$text": "Remove this character and then displace him anywhere on the game board where his base will fit.", "typeId": "0d51-66c7-3432-6402"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Loki",
+        "id": "dae8-4905-38f7-4402",
+        "collective": false,
+        "hidden": false,
+        "page": 0,
+        "publicationId": "b63f-b878-pub1",
+        "type": "model",
+        "categoryLinks": [{"id": "b99b-03ca-2aea-4674", "hidden": false, "primary": true, "targetId": "9861-047c-a40f-d279"}],
+        "constraints": [
+          {
+            "id": "b800-3278-c20c-d9f1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "aa3a-b78b-9f26-bbc4",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Levels", "typeId": "points", "value": 12}],
+        "infoLinks": [
+          {"name": "Luck", "id": "c43d-9af1-8980-7cfa", "hidden": false, "targetId": "bf53-256f-ac5b-0138", "type": "rule"},
+          {"name": "Phase Shift", "id": "1020-9811-d1ef-98f9", "hidden": false, "targetId": "403f-33f0-0378-8744", "type": "rule"},
+          {"name": "Great Strategist", "id": "450c-d92b-11b5-c702", "hidden": false, "targetId": "3525-94a9-8b6b-fc99", "type": "rule"},
+          {"name": "Perfect Plan", "id": "7ee8-1ae7-f635-a50b", "hidden": false, "targetId": "1cbd-77af-f791-9014", "type": "rule"},
+          {"name": "Resistance /2 to Cold", "id": "bcd9-4425-ce1f-9c2f", "hidden": false, "targetId": "0aab-7ab5-9286-028f", "type": "rule"},
+          {"name": "Stun/1 (Effect)", "id": "78b3-e64b-c6d2-7e97", "hidden": false, "targetId": "d802-bc9e-bc31-5feb", "type": "rule"},
+          {"name": "Ensnare/3 (Effect)", "id": "6a8c-12e3-22dc-a42b", "hidden": false, "targetId": "d163-c84c-4a20-6f12", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Attributes",
+            "id": "9a3b-fc44-251e-56f8",
+            "hidden": false,
+            "page": 0,
+            "typeId": "2093f4cd-f669-06c6-0f4f-06037948fe28",
+            "characteristics": [
+              {"name": "Character Name", "$text": "Loki Laufersson", "typeId": "05e8c135-ad80-14b3-0017-f9c22029aab7"},
+              {"name": "Power", "$text": "8", "typeId": "911f2847-ecab-772a-37ad-b325a40b19ce"},
+              {"name": "Speed", "$text": "4 / 8", "typeId": "fd922c18-88be-5191-46b0-1ab589f2ef33"},
+              {"name": "Attack", "$text": "6", "typeId": "49d96d28-c1dc-f977-7bb6-8e1fbe8fe397"},
+              {"name": "Strength", "$text": "3", "typeId": "9ef0bc71-33ab-98cd-26b3-07c55ed7725f"},
+              {"name": "Size", "$text": "2", "typeId": "84a7bbc1-d970-b7b9-2fd5-f174c9fdda90"},
+              {"name": "Agility", "$text": "8", "typeId": "ae357512-6823-3b1d-aebe-2c2c8e52e2e0"},
+              {"name": "Stamina", "$text": "8", "typeId": "4e4daeff-a451-4e80-f5b5-d588866411b4"},
+              {"name": "Willpower", "$text": "10", "typeId": "d6fc-863a-9aaa-271d"},
+              {"name": "Faction", "$text": "Superhuman / Cosmic", "typeId": "d0e0-c03d-1183-cd2e"},
+              {"name": "Alignment", "$text": "Villain", "typeId": "3d3e-73e5-dd6a-789c"}
+            ]
+          },
+          {
+            "name": "Defenses",
+            "id": "2897-aa41-8b37-5812",
+            "hidden": false,
+            "typeId": "0aed-3bd3-2aaa-6237",
+            "characteristics": [
+              {"name": "Physical", "$text": "15", "typeId": "8ae7-72f6-f278-cb05"},
+              {"name": "Energy", "$text": "16", "typeId": "ecb8-5b30-787e-8ab8"},
+              {"name": "Supernatural", "$text": "16", "typeId": "05fc-2837-01e5-4a01"},
+              {"name": "Mental", "$text": "18", "typeId": "cf20-f678-81bc-115a"}
+            ]
+          },
+          {
+            "name": "Endurance",
+            "id": "bde6-4c21-b5c7-bec4",
+            "hidden": false,
+            "typeId": "07d6-95ce-9c89-313a",
+            "characteristics": [
+              {"name": "1st Zone", "$text": "6 | +1 Power, +1 Speed", "typeId": "4a0d-5cb8-6642-b372"},
+              {"name": "2nd Zone", "$text": "3", "typeId": "b848-9544-7a2f-d6a1"},
+              {"name": "3rd zone", "$text": "5 | -1 Attack, -1 Power", "typeId": "218b-1f12-55cf-07d5"}
+            ]
+          },
+          {
+            "name": "(B) Scepter Strike",
+            "id": "6857-f4b1-906c-6c01",
+            "hidden": false,
+            "page": 0,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "2", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Basic", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Physical / Blunt", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "1", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "Melee", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "typeId": "766e-310f-da26-21b0"}
+            ]
+          },
+          {
+            "name": "(E) Scepter Ray",
+            "id": "4fe3-ba0f-b4d8-0d23",
+            "hidden": false,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "3", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Extraordinary", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Energy", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "2", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "10", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "$text": "Stun/1", "typeId": "766e-310f-da26-21b0"}
+            ]
+          },
+          {
+            "name": "(U) Freeze Blast",
+            "id": "b5c4-ef9c-a180-369d",
+            "hidden": false,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "4", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Unique", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Energy - Cold", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "2", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "Spray", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "$text": "Ensnare/3", "typeId": "766e-310f-da26-21b0"}
+            ]
+          },
+          {
+            "name": "(B) Brothers of Asgard",
+            "id": "c84e-011b-d9b2-767a",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "0", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Basic", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Passive (P)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "-", "typeId": "1926-6aee-b562-0107"},
+              {"name": "Effects", "$text": "Loki can join a team including Thor as Neutral", "typeId": "0d51-66c7-3432-6402"}
+            ]
+          },
+          {
+            "name": "(U) Retreat",
+            "id": "7d2e-2fdc-dd8a-106e",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "1", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Unique", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Reactive (R)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "-", "typeId": "1926-6aee-b562-0107"},
+              {
+                "name": "Effects",
+                "$text": "Remove this model from play and place this model in his deployment zone where the base can fit in.",
+                "typeId": "0d51-66c7-3432-6402"
+              }
+            ]
+          },
+          {
+            "name": "(B) Persuasion",
+            "id": "fde2-154a-bf6b-83a5",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "2", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Basic", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Active (A)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "6", "typeId": "1926-6aee-b562-0107"},
+              {"name": "Effects", "$text": "The target enemy must reroll all successfull Willpower rolls until the end of the round.", "typeId": "0d51-66c7-3432-6402"}
+            ]
+          },
+          {
+            "name": "(E) Gem Keeper",
+            "id": "b3ed-2d64-f229-d1b2",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "2", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Extraordinary", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Active (A)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "8", "typeId": "1926-6aee-b562-0107"},
+              {"name": "Effects", "$text": "Until the end of the round, all models in range cannot use defensive improvements.", "typeId": "0d51-66c7-3432-6402"}
+            ]
+          },
+          {
+            "name": "(E) Master of Decoy",
+            "id": "9d24-bf10-657f-87f9",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "2", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Extraordinary", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Reactive (R)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "-", "typeId": "1926-6aee-b562-0107"},
+              {
+                "name": "Effects",
+                "$text": "When this model is the target of an enemy attack, the enemy model must make a Willpower roll. If failed, remove this model from play and place it again within 2\" on his previous position.",
+                "typeId": "0d51-66c7-3432-6402"
+              }
+            ]
+          },
+          {
+            "name": "(E) Expose to the Darkness",
+            "id": "8406-de2c-202a-94f5",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "3", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Extraordinary", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Active (A)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "8", "typeId": "1926-6aee-b562-0107"},
+              {"name": "Effects", "$text": "The target enemy model suffers 3 Supernatural / Evil damage, unless it passes a Willpower roll.", "typeId": "0d51-66c7-3432-6402"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Thanos",
+        "id": "a683-bd38-e1a0-6208",
+        "collective": false,
+        "hidden": false,
+        "page": 0,
+        "publicationId": "b63f-b878-pub1",
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "481a-e35b-3fd9-606e", "hidden": false, "primary": true, "targetId": "9861-047c-a40f-d279"}],
+        "constraints": [
+          {
+            "id": "f47a-4b31-0dd7-42d4",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "0e94-9b88-d352-3bb9",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Levels", "typeId": "points", "value": 20}],
+        "infoLinks": [
+          {"name": "Energy", "id": "3d41-13d6-b30e-a948", "hidden": false, "targetId": "6bff-0e50-a7a3-0551", "type": "rule"},
+          {"name": "Phase Shift", "id": "f3ff-8c21-d8a1-aa33", "hidden": false, "targetId": "403f-33f0-0378-8744", "type": "rule"},
+          {"name": "Mastermind", "id": "8131-d242-9411-9d13", "hidden": false, "targetId": "00bd-1971-ec95-81fc", "type": "rule"},
+          {"name": "Toughness / 1", "id": "79fd-83a6-5410-2f7a", "hidden": false, "targetId": "127f-cd9b-8a0d-2770", "type": "rule"},
+          {"name": "Irresistible (Effect)", "id": "9005-20f6-9f15-5955", "hidden": false, "targetId": "e032-53ec-8613-b854", "type": "rule"},
+          {"name": "Push/4 (Effect)", "id": "b04c-7335-9765-7d2b", "hidden": false, "targetId": "145c-cc16-45fc-08f8", "type": "rule"},
+          {"name": "Ensnare/3 (Effect)", "id": "9c25-9f40-af96-3c11", "hidden": false, "targetId": "d163-c84c-4a20-6f12", "type": "rule"},
+          {"name": "Resistance /1 to Energy", "id": "ebea-6d0e-27de-511d", "hidden": false, "targetId": "7b73-aba5-3e28-de8a", "type": "rule"},
+          {"name": "Resistance /1 to Mental", "id": "36d0-f3f3-7b55-e440", "hidden": false, "targetId": "c17d-4ce9-ef77-5b4a", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Attributes",
+            "id": "1d76-9083-6720-d002",
+            "hidden": false,
+            "page": 0,
+            "typeId": "2093f4cd-f669-06c6-0f4f-06037948fe28",
+            "characteristics": [
+              {"name": "Character Name", "$text": "Thanos", "typeId": "05e8c135-ad80-14b3-0017-f9c22029aab7"},
+              {"name": "Power", "$text": "12", "typeId": "911f2847-ecab-772a-37ad-b325a40b19ce"},
+              {"name": "Speed", "$text": "4 / 7", "typeId": "fd922c18-88be-5191-46b0-1ab589f2ef33"},
+              {"name": "Attack", "$text": "6", "typeId": "49d96d28-c1dc-f977-7bb6-8e1fbe8fe397"},
+              {"name": "Strength", "$text": "5", "typeId": "9ef0bc71-33ab-98cd-26b3-07c55ed7725f"},
+              {"name": "Size", "$text": "3", "typeId": "84a7bbc1-d970-b7b9-2fd5-f174c9fdda90"},
+              {"name": "Agility", "$text": "7", "typeId": "ae357512-6823-3b1d-aebe-2c2c8e52e2e0"},
+              {"name": "Stamina", "$text": "12", "typeId": "4e4daeff-a451-4e80-f5b5-d588866411b4"},
+              {"name": "Willpower", "$text": "10", "typeId": "d6fc-863a-9aaa-271d"},
+              {"name": "Faction", "$text": "Superhuman / Cosmic", "typeId": "d0e0-c03d-1183-cd2e"},
+              {"name": "Alignment", "$text": "Villain", "typeId": "3d3e-73e5-dd6a-789c"}
+            ]
+          },
+          {
+            "name": "Defenses",
+            "id": "4385-7abc-855d-7c2a",
+            "hidden": false,
+            "typeId": "0aed-3bd3-2aaa-6237",
+            "characteristics": [
+              {"name": "Physical", "$text": "14", "typeId": "8ae7-72f6-f278-cb05"},
+              {"name": "Energy", "$text": "14", "typeId": "ecb8-5b30-787e-8ab8"},
+              {"name": "Supernatural", "$text": "14", "typeId": "05fc-2837-01e5-4a01"},
+              {"name": "Mental", "$text": "18", "typeId": "cf20-f678-81bc-115a"}
+            ]
+          },
+          {
+            "name": "Endurance",
+            "id": "e7e1-37fc-a9d4-f73b",
+            "hidden": false,
+            "typeId": "07d6-95ce-9c89-313a",
+            "characteristics": [
+              {"name": "1st Zone", "$text": "10 | +1 Power, +1 Attack", "typeId": "4a0d-5cb8-6642-b372"},
+              {"name": "2nd Zone", "$text": "6", "typeId": "b848-9544-7a2f-d6a1"},
+              {"name": "3rd zone", "$text": "6 | -1 Power, -1 Speed", "typeId": "218b-1f12-55cf-07d5"}
+            ]
+          },
+          {
+            "name": "(B) Titan Punch",
+            "id": "24f0-7c09-c651-d467",
+            "hidden": false,
+            "page": 0,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "4", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Basic", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Physical / Blunt", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "4", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "Melee", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "$text": "Overload: Ensnare/3", "typeId": "766e-310f-da26-21b0"}
+            ]
+          },
+          {
+            "name": "(E) Cosmic Rain",
+            "id": "04cc-e8e7-7a9a-427e",
+            "hidden": false,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "3", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Extraordinary", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Energy", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "3", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "13", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "$text": "Irresistible", "typeId": "766e-310f-da26-21b0"}
+            ]
+          },
+          {
+            "name": "(U) Titan Beam",
+            "id": "3b38-ca87-acce-4825",
+            "hidden": false,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "3", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Unique", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Energy", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "3", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "Spray", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "$text": "Push/4", "typeId": "766e-310f-da26-21b0"}
+            ]
+          },
+          {
+            "name": "(B) Infinity Gauntlet",
+            "id": "f73a-7c9d-52e7-26c5",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "0", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Basic", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Passive (P)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "-", "typeId": "1926-6aee-b562-0107"},
+              {"name": "Effects", "$text": "This model can carry more than one Infinity Gem.", "typeId": "0d51-66c7-3432-6402"}
+            ]
+          },
+          {
+            "name": "(U) Imprision",
+            "id": "42c5-cbf2-1c01-1ee4",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "3", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Unique", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Active (A)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "6", "typeId": "1926-6aee-b562-0107"},
+              {"name": "Effects", "$text": "The target enemy model cannot move this round.", "typeId": "0d51-66c7-3432-6402"}
+            ]
+          },
+          {
+            "name": "(E) Cosmic Shift",
+            "id": "a61c-4c49-b3de-8b02",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "2", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Extraordinary", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Active (A)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "-", "typeId": "1926-6aee-b562-0107"},
+              {
+                "name": "Effects",
+                "$text": "Displace this model up to 10\" away. Thanos loses all his Resistances until the end of the round.",
+                "typeId": "0d51-66c7-3432-6402"
+              }
+            ]
+          },
+          {
+            "name": "(E) Force Field",
+            "id": "1907-9bc9-7a7a-82ec",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "2", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Extraordinary", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Active (A), Reactive (R)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "-", "typeId": "1926-6aee-b562-0107"},
+              {
+                "name": "Effects",
+                "$text": "This model gains +2 to Defense vs Physical and Energy Ranged Attacks until the end of the round.",
+                "typeId": "0d51-66c7-3432-6402"
+              }
+            ]
+          },
+          {
+            "name": "(U) Cosmic Nova",
+            "id": "6388-965b-b540-2bd7",
+            "hidden": false,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "8", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Unique", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Energy", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "6", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "Exp.Wave/5", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "typeId": "766e-310f-da26-21b0"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Silver Surfer",
+        "id": "c91d-2c89-ecfa-65b1",
+        "collective": false,
+        "hidden": false,
+        "page": 0,
+        "publicationId": "b63f-b878-pub1",
+        "type": "model",
+        "categoryLinks": [{"id": "9cab-5532-a780-20e0", "hidden": false, "primary": true, "targetId": "9861-047c-a40f-d279"}],
+        "constraints": [
+          {
+            "id": "1bff-3144-575b-3166",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "force",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          },
+          {
+            "id": "99d0-0f86-8ccb-0e5c",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Levels", "typeId": "points", "value": 12}],
+        "infoLinks": [
+          {"name": "Fly", "id": "e95b-47f3-6903-ea51", "hidden": false, "targetId": "f680-a7b7-520d-b6a9", "type": "rule"},
+          {"name": "Phase Shift", "id": "2816-0b9c-9532-859d", "hidden": false, "targetId": "403f-33f0-0378-8744", "type": "rule"},
+          {"name": "Regeneration /1", "id": "2d50-c859-146a-aa0c", "hidden": false, "targetId": "09fa-3afb-5c05-0399", "type": "rule"},
+          {"name": "Resistance /1 to Physical", "id": "70a3-f440-1e03-1011", "hidden": false, "targetId": "17e1-0a83-d7ad-0495", "type": "rule"},
+          {"name": "Resistance /1 to Energy", "id": "531a-3891-1753-13da", "hidden": false, "targetId": "7b73-aba5-3e28-de8a", "type": "rule"},
+          {"name": "Power Master", "id": "3a69-74c9-43b4-381c", "hidden": false, "targetId": "7376-55d7-da2e-0c78", "type": "rule"},
+          {"name": "Penetrative (Effect)", "id": "f5c9-bb4c-1c48-cd48", "hidden": false, "targetId": "b879-b2e4-f0ca-16e5", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Attributes",
+            "id": "4ee0-7ce1-cbde-476a",
+            "hidden": false,
+            "page": 0,
+            "typeId": "2093f4cd-f669-06c6-0f4f-06037948fe28",
+            "characteristics": [
+              {"name": "Character Name", "$text": "Norin Radd", "typeId": "05e8c135-ad80-14b3-0017-f9c22029aab7"},
+              {"name": "Power", "$text": "8", "typeId": "911f2847-ecab-772a-37ad-b325a40b19ce"},
+              {"name": "Speed", "$text": "4 / 8 / 15", "typeId": "fd922c18-88be-5191-46b0-1ab589f2ef33"},
+              {"name": "Attack", "$text": "6", "typeId": "49d96d28-c1dc-f977-7bb6-8e1fbe8fe397"},
+              {"name": "Strength", "$text": "3", "typeId": "9ef0bc71-33ab-98cd-26b3-07c55ed7725f"},
+              {"name": "Size", "$text": "2", "typeId": "84a7bbc1-d970-b7b9-2fd5-f174c9fdda90"},
+              {"name": "Agility", "$text": "9", "typeId": "ae357512-6823-3b1d-aebe-2c2c8e52e2e0"},
+              {"name": "Stamina", "$text": "9", "typeId": "4e4daeff-a451-4e80-f5b5-d588866411b4"},
+              {"name": "Willpower", "$text": "9", "typeId": "d6fc-863a-9aaa-271d"},
+              {"name": "Faction", "$text": "Cosmic", "typeId": "d0e0-c03d-1183-cd2e"},
+              {"name": "Alignment", "$text": "Neutral", "typeId": "3d3e-73e5-dd6a-789c"}
+            ]
+          },
+          {
+            "name": "Defenses",
+            "id": "566b-b48c-ca48-fcab",
+            "hidden": false,
+            "typeId": "0aed-3bd3-2aaa-6237",
+            "characteristics": [
+              {"name": "Physical", "$text": "15", "typeId": "8ae7-72f6-f278-cb05"},
+              {"name": "Energy", "$text": "15", "typeId": "ecb8-5b30-787e-8ab8"},
+              {"name": "Supernatural", "$text": "15", "typeId": "05fc-2837-01e5-4a01"},
+              {"name": "Mental", "$text": "15", "typeId": "cf20-f678-81bc-115a"}
+            ]
+          },
+          {
+            "name": "Endurance",
+            "id": "7da5-0593-5d36-8f61",
+            "hidden": false,
+            "typeId": "07d6-95ce-9c89-313a",
+            "characteristics": [
+              {"name": "1st Zone", "$text": "5 | +1 Power", "typeId": "4a0d-5cb8-6642-b372"},
+              {"name": "2nd Zone", "$text": "5 | +1 Attack", "typeId": "b848-9544-7a2f-d6a1"},
+              {"name": "3rd zone", "$text": "5 | +1 Speed", "typeId": "218b-1f12-55cf-07d5"}
+            ]
+          },
+          {
+            "name": "(B) Silver Beam",
+            "id": "dd8a-55b7-3412-8f20",
+            "hidden": false,
+            "page": 0,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "2", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Basic", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Energy / Laser", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "1", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "18", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "typeId": "766e-310f-da26-21b0"}
+            ]
+          },
+          {
+            "name": "(U) Blast Power",
+            "id": "0597-8785-7430-67a9",
+            "hidden": false,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "5", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Unique", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Energy", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "5", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "6", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "$text": "Penetrative", "typeId": "766e-310f-da26-21b0"}
+            ]
+          },
+          {
+            "name": "(B) The Silver",
+            "id": "2fca-00a6-e1bf-8bcb",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "0", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Basic", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Passive (P)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "-", "typeId": "1926-6aee-b562-0107"},
+              {"name": "Effects", "$text": "Defensive Improvements on this character give him +3 instead of the usual +2", "typeId": "0d51-66c7-3432-6402"}
+            ]
+          },
+          {
+            "name": "(E) Energy Absorption",
+            "id": "fc70-9cc4-604c-0436",
+            "hidden": false,
+            "typeId": "be6b-cdbb-d375-ad49",
+            "characteristics": [
+              {"name": "Cost", "$text": "2", "typeId": "85f0-b715-1ab3-e4c3"},
+              {"name": "Frequency", "$text": "Extraordinary", "typeId": "5510-b92e-3a35-7284"},
+              {"name": "Use", "$text": "Reactive (R)", "typeId": "0eae-b3a1-67d3-6b42"},
+              {"name": "Range", "$text": "-", "typeId": "1926-6aee-b562-0107"},
+              {
+                "name": "Effects",
+                "$text": "Cancel one Energy attack targeting this model. The next Silver Pulse this character uses gains +2 Damage (this bonus doesn't stack)",
+                "typeId": "0d51-66c7-3432-6402"
+              }
+            ]
+          },
+          {
+            "name": "(B) Blast Off",
+            "id": "4c2a-02c0-a898-78d9",
+            "hidden": false,
+            "page": 0,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "2", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Basic", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Physical / Blunt", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "2", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "Melee", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "typeId": "766e-310f-da26-21b0"}
+            ]
+          },
+          {
+            "name": "(E) Silver Pulse",
+            "id": "61ce-71fe-dd2f-3a7a",
+            "hidden": false,
+            "page": 0,
+            "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+            "characteristics": [
+              {"name": "Cost", "$text": "3", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+              {"name": "Frequency", "$text": "Extraordinary", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+              {"name": "Nature/Type", "$text": "Energy / Radiation", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+              {"name": "Damage", "$text": "2", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+              {"name": "Range", "$text": "Exp. Wave /4", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+              {"name": "Effects", "typeId": "766e-310f-da26-21b0"}
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "(B) Bodyguard",
+        "id": "b86c-bdb0-d359-8de3",
+        "hidden": false,
+        "typeId": "be6b-cdbb-d375-ad49",
+        "characteristics": [
+          {"name": "Cost", "$text": "1", "typeId": "85f0-b715-1ab3-e4c3"},
+          {"name": "Frequency", "$text": "Basic", "typeId": "5510-b92e-3a35-7284"},
+          {"name": "Use", "$text": "Reactive (R)", "typeId": "0eae-b3a1-67d3-6b42"},
+          {"name": "Range", "$text": "2", "typeId": "1926-6aee-b562-0107"},
+          {"name": "Effects", "$text": "When a friendly model in range is attacked, this model becomes the new target.", "typeId": "0d51-66c7-3432-6402"}
+        ]
+      }
+    ]
+  }
+}

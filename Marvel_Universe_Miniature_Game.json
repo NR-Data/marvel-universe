@@ -1,0 +1,920 @@
+{
+  "gameSystem": {
+    "name": "Marvel Universe Miniature Game",
+    "id": "c372-4887-df6a-ad9e",
+    "authorName": "NeXo",
+    "authorUrl": "http://labibliotecadealfred.blogspot.com.es/",
+    "battleScribeVersion": 2.03,
+    "revision": 1,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {"name": "Superhuman Heroes (Marvel)", "id": "8e5643b0-fa24-83db-e4f2-1622a0ee32b4", "hidden": false},
+      {"name": "Mutant Heroes (Marvel)", "id": "574c-53a7-facd-188b", "hidden": false},
+      {"name": "Cosmic Heroes (Marvel)", "id": "dbf6-0f63-203c-eb6c", "hidden": false},
+      {"name": "Superhuman Villains (Marvel)", "id": "4e20-4037-aa69-dde0", "hidden": false},
+      {"name": "Mutant Villains (Marvel)", "id": "2699-16b6-defe-349e", "hidden": false},
+      {"name": "Cosmic Villains (Marvel)", "id": "9861-047c-a40f-d279", "hidden": false}
+    ],
+    "costTypes": [{"name": "Levels", "id": "points", "defaultCostLimit": 0}],
+    "forceEntries": [
+      {
+        "name": "Characters",
+        "id": "4e5b49d8-1fef-164b-8bd7-0bee9ad46f2f",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Superhuman Heroes (Marvel)", "id": "0702-7507-71ad-a69f", "hidden": false, "primary": false, "targetId": "8e5643b0-fa24-83db-e4f2-1622a0ee32b4"},
+          {
+            "name": "Mutant Heroes (Marvel)",
+            "id": "4e5b49d8-1fef-164b-8bd7-0bee9ad46f2f-574c-53a7-facd-188b",
+            "hidden": false,
+            "primary": false,
+            "targetId": "574c-53a7-facd-188b"
+          },
+          {
+            "name": "Cosmic Heroes (Marvel)",
+            "id": "4e5b49d8-1fef-164b-8bd7-0bee9ad46f2f-dbf6-0f63-203c-eb6c",
+            "hidden": false,
+            "primary": false,
+            "targetId": "dbf6-0f63-203c-eb6c"
+          },
+          {
+            "name": "Superhuman Villains (Marvel)",
+            "id": "4e5b49d8-1fef-164b-8bd7-0bee9ad46f2f-4e20-4037-aa69-dde0",
+            "hidden": false,
+            "primary": false,
+            "targetId": "4e20-4037-aa69-dde0"
+          },
+          {
+            "name": "Mutant Villains (Marvel)",
+            "id": "4e5b49d8-1fef-164b-8bd7-0bee9ad46f2f-2699-16b6-defe-349e",
+            "hidden": false,
+            "primary": false,
+            "targetId": "2699-16b6-defe-349e"
+          },
+          {
+            "name": "Cosmic Villains (Marvel)",
+            "id": "4e5b49d8-1fef-164b-8bd7-0bee9ad46f2f-9861-047c-a40f-d279",
+            "hidden": false,
+            "primary": false,
+            "targetId": "9861-047c-a40f-d279"
+          }
+        ]
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "1.1 Attributes",
+        "id": "2093f4cd-f669-06c6-0f4f-06037948fe28",
+        "characteristicTypes": [
+          {"name": "Character Name", "id": "05e8c135-ad80-14b3-0017-f9c22029aab7"},
+          {"name": "Power", "id": "911f2847-ecab-772a-37ad-b325a40b19ce"},
+          {"name": "Speed", "id": "fd922c18-88be-5191-46b0-1ab589f2ef33"},
+          {"name": "Attack", "id": "49d96d28-c1dc-f977-7bb6-8e1fbe8fe397"},
+          {"name": "Strength", "id": "9ef0bc71-33ab-98cd-26b3-07c55ed7725f"},
+          {"name": "Size", "id": "84a7bbc1-d970-b7b9-2fd5-f174c9fdda90"},
+          {"name": "Agility", "id": "ae357512-6823-3b1d-aebe-2c2c8e52e2e0"},
+          {"name": "Stamina", "id": "4e4daeff-a451-4e80-f5b5-d588866411b4"},
+          {"name": "Willpower", "id": "d6fc-863a-9aaa-271d"},
+          {"name": "Faction", "id": "d0e0-c03d-1183-cd2e"},
+          {"name": "Alignment", "id": "3d3e-73e5-dd6a-789c"}
+        ]
+      },
+      {
+        "name": "1.5 Attack",
+        "id": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+        "characteristicTypes": [
+          {"name": "Cost", "id": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+          {"name": "Frequency", "id": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+          {"name": "Nature/Type", "id": "506110c4-0beb-8424-f711-f5625250abe0"},
+          {"name": "Damage", "id": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+          {"name": "Range", "id": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+          {"name": "Effects", "id": "766e-310f-da26-21b0"}
+        ]
+      },
+      {"name": "1.4 Skills", "id": "bb61-0155-1e4d-5a5d"},
+      {
+        "name": "1.6 Special Power",
+        "id": "be6b-cdbb-d375-ad49",
+        "characteristicTypes": [
+          {"name": "Cost", "id": "85f0-b715-1ab3-e4c3"},
+          {"name": "Frequency", "id": "5510-b92e-3a35-7284"},
+          {"name": "Use", "id": "0eae-b3a1-67d3-6b42"},
+          {"name": "Range", "id": "1926-6aee-b562-0107"},
+          {"name": "Effects", "id": "0d51-66c7-3432-6402"}
+        ]
+      },
+      {
+        "name": "1.2 Defenses",
+        "id": "0aed-3bd3-2aaa-6237",
+        "characteristicTypes": [
+          {"name": "Physical", "id": "8ae7-72f6-f278-cb05"},
+          {"name": "Energy", "id": "ecb8-5b30-787e-8ab8"},
+          {"name": "Supernatural", "id": "05fc-2837-01e5-4a01"},
+          {"name": "Mental", "id": "cf20-f678-81bc-115a"}
+        ]
+      },
+      {
+        "name": "1.3 Endurance",
+        "id": "07d6-95ce-9c89-313a",
+        "characteristicTypes": [{"name": "1st Zone", "id": "4a0d-5cb8-6642-b372"}, {"name": "2nd Zone", "id": "b848-9544-7a2f-d6a1"}, {"name": "3rd zone", "id": "218b-1f12-55cf-07d5"}]
+      },
+      {"name": "1.7 Team Bonus", "id": "e661-788c-2c8a-0ac2", "characteristicTypes": [{"name": "Description", "id": "6630-2a46-a888-86a9"}]}
+    ],
+    "sharedProfiles": [
+      {
+        "name": "(B) Bodyguard",
+        "id": "3eee-1860-81c1-f81d",
+        "hidden": false,
+        "typeId": "be6b-cdbb-d375-ad49",
+        "characteristics": [
+          {"name": "Cost", "$text": "1", "typeId": "85f0-b715-1ab3-e4c3"},
+          {"name": "Frequency", "$text": "Basic", "typeId": "5510-b92e-3a35-7284"},
+          {"name": "Use", "$text": "Reactive (R)", "typeId": "0eae-b3a1-67d3-6b42"},
+          {"name": "Range", "$text": "2", "typeId": "1926-6aee-b562-0107"},
+          {
+            "name": "Effects",
+            "$text": "When a friendly model in range becomes the target of an attack, this model becomes the new target.",
+            "typeId": "0d51-66c7-3432-6402"
+          }
+        ]
+      },
+      {
+        "name": "(E) Trick",
+        "id": "482d-c9ac-5d2e-fed9",
+        "hidden": false,
+        "typeId": "be6b-cdbb-d375-ad49",
+        "characteristics": [
+          {"name": "Cost", "$text": "1", "typeId": "85f0-b715-1ab3-e4c3"},
+          {"name": "Frequency", "$text": "Extraordinary", "typeId": "5510-b92e-3a35-7284"},
+          {"name": "Use", "$text": "Active (A)", "typeId": "0eae-b3a1-67d3-6b42"},
+          {"name": "Range", "$text": "8", "typeId": "1926-6aee-b562-0107"},
+          {"name": "Effects", "$text": "Target must pass a Willpower roll or obtain Distract / 2 until te end of the round.", "typeId": "0d51-66c7-3432-6402"}
+        ]
+      },
+      {
+        "name": "(B) Punch",
+        "id": "d992-aa5c-c995-3807",
+        "hidden": false,
+        "page": 0,
+        "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+        "characteristics": [
+          {"name": "Cost", "$text": "2", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+          {"name": "Frequency", "$text": "Basic", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+          {"name": "Nature/Type", "$text": "Physical / Blunt", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+          {"name": "Damage", "$text": "2", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+          {"name": "Range", "$text": "Melee", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+          {"name": "Effects", "typeId": "766e-310f-da26-21b0"}
+        ]
+      },
+      {
+        "name": "(E) Pounce",
+        "id": "3ad8-aabe-6de3-2edb",
+        "hidden": false,
+        "typeId": "be6b-cdbb-d375-ad49",
+        "characteristics": [
+          {"name": "Cost", "$text": "1", "typeId": "85f0-b715-1ab3-e4c3"},
+          {"name": "Frequency", "$text": "Extraordinary", "typeId": "5510-b92e-3a35-7284"},
+          {"name": "Use", "$text": "Active (A)", "typeId": "0eae-b3a1-67d3-6b42"},
+          {"name": "Range", "$text": "-", "typeId": "1926-6aee-b562-0107"},
+          {"name": "Effects", "$text": "Move this character up to 4\"", "typeId": "0d51-66c7-3432-6402"}
+        ]
+      },
+      {
+        "name": "(B) Strike",
+        "id": "457d-2611-c4bb-d162",
+        "hidden": false,
+        "page": 0,
+        "typeId": "6f795d1b-72c8-67be-41aa-b19f01c57e00",
+        "characteristics": [
+          {"name": "Cost", "$text": "2", "typeId": "255a71dd-d99c-9284-41b0-3251153fa8f4"},
+          {"name": "Frequency", "$text": "Basic", "typeId": "8c2ab6b5-ed0a-c4a4-e998-1a5ac91e29db"},
+          {"name": "Nature/Type", "$text": "Physical / Blunt", "typeId": "506110c4-0beb-8424-f711-f5625250abe0"},
+          {"name": "Damage", "$text": "1", "typeId": "007da7da-5083-4b0e-45c7-48fbd32f35a3"},
+          {"name": "Range", "$text": "Melee", "typeId": "f16d0497-6009-e51a-5e4b-8195e5fac2bf"},
+          {"name": "Effects", "$text": "In Diamond Form also gains +1 Damage", "typeId": "766e-310f-da26-21b0"}
+        ]
+      },
+      {
+        "name": "(B) Advanced Bodyguard",
+        "id": "16ae-331e-e84c-72ad",
+        "hidden": false,
+        "typeId": "be6b-cdbb-d375-ad49",
+        "characteristics": [
+          {"name": "Cost", "$text": "1", "typeId": "85f0-b715-1ab3-e4c3"},
+          {"name": "Frequency", "$text": "Basic", "typeId": "5510-b92e-3a35-7284"},
+          {"name": "Use", "$text": "Reactive (R)", "typeId": "0eae-b3a1-67d3-6b42"},
+          {"name": "Range", "$text": "4", "typeId": "1926-6aee-b562-0107"},
+          {
+            "name": "Effects",
+            "$text": "When a friendly model in range becomes the target of an attack, this model becomes the new target.",
+            "typeId": "0d51-66c7-3432-6402"
+          }
+        ]
+      },
+      {
+        "name": "(E) Advanced Pounce",
+        "id": "22ff-bb35-f841-1ad4",
+        "hidden": false,
+        "typeId": "be6b-cdbb-d375-ad49",
+        "characteristics": [
+          {"name": "Cost", "$text": "2", "typeId": "85f0-b715-1ab3-e4c3"},
+          {"name": "Frequency", "$text": "Extraordinary", "typeId": "5510-b92e-3a35-7284"},
+          {"name": "Use", "$text": "Active (A)", "typeId": "0eae-b3a1-67d3-6b42"},
+          {"name": "Range", "$text": "-", "typeId": "1926-6aee-b562-0107"},
+          {"name": "Effects", "$text": "Move this character up to 6\"", "typeId": "0d51-66c7-3432-6402"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {"name": "Acrobat", "id": "d103-fc7c-84e6-69b5", "description": "Model may reroll failed Agility rolls", "hidden": false, "page": 0},
+      {"name": "Agile", "id": "fccc-3c95-79fe-af73", "description": "This model can make one extra movement action per Round.", "hidden": false},
+      {
+        "name": "Assassin",
+        "id": "62c9-d6cc-ad5b-d427",
+        "description": "If this character scores a double 8 on a To Hit roll doing a melee or ranged attack, the base damage of that attack is doubled.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Brutal",
+        "id": "4914-7926-d408-2b46",
+        "description": "If this character scores a Critical in a To Hit roll for a melee attack, the target of the attack may also receive the Push 4 effect (Attacker’s choice) in addition to the usual +1 to damage.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Climbing",
+        "id": "bcae-e08e-7923-cbff",
+        "description": "A character with this ability can end their movement in any part of the gaming area, even if their base does not fit. The character may not end their movement in a space occupied by other character. Mark the exact position of the miniature with a counter.",
+        "hidden": false
+      },
+      {
+        "name": "Comrade X",
+        "id": "1f64-97a2-8e9d-ffc9",
+        "description": "Unactivated Character X can be activated immediately after the character with the Comrade ability. This allows you to activate two characters consecutively, bypassing the usual sequence of play.",
+        "hidden": false
+      },
+      {
+        "name": "Cruel",
+        "id": "b09b-fb64-7074-90e7",
+        "description": "If the target character's Endurance is in the red zone after this attack is resolved, add 1 to the damage caused.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Fly",
+        "id": "f680-a7b7-520d-b6a9",
+        "description": "This character gains a +1 bonus to Defense against melee attacks from models without the Fly Skill.",
+        "hidden": false
+      },
+      {
+        "name": "Great Strategist",
+        "id": "3525-94a9-8b6b-fc99",
+        "description": "At the start of the game add an extra counter for your side to the initiative bag.",
+        "hidden": false
+      },
+      {
+        "name": "Immunity to Electric",
+        "id": "dfbf-d658-3c66-5d21",
+        "description": "This character can’t be damaged or affected by attacks/powers with the ‘Electric’ nature or damage type.",
+        "hidden": false
+      },
+      {
+        "name": "Immunity to Psionic",
+        "id": "55bb-2406-5e3a-6a51",
+        "description": "This character can’t be damaged or affected by attacks/powers with the ‘Psionic’ nature or damage type.",
+        "hidden": false
+      },
+      {
+        "name": "Infiltrator",
+        "id": "34de-2ea1-e48d-9a00",
+        "description": "During deployment, this model may be placed anywhere on the game board where its base will fit, and not in contact with an enemy model’s volume.",
+        "hidden": false,
+        "page": 0
+      },
+      {"name": "Invisible", "id": "c5e0-965c-a517-e953", "description": "This model cannot be seen by models more than 1\" away.", "hidden": false, "page": 0},
+      {
+        "name": "Leadership / 6",
+        "id": "e0de-6698-f9e3-8a34",
+        "description": "Friendly models within 6\" with a base Power value lower than this character’s will gain one bonus Power counter when they are activated. A character that has this ability cannot benefit from this rule. This bonus doesn’t stack.",
+        "hidden": false
+      },
+      {"name": "Luck", "id": "bf53-256f-ac5b-0138", "description": "Once per Round, this character may reroll any one die.", "hidden": false, "page": 0},
+      {"name": "Marksmanship", "id": "d8b2-f66a-b039-0aac", "description": "This character gains +1 to their To Hit rolls on all ranged attacks.", "hidden": false},
+      {
+        "name": "Master Fighter",
+        "id": "2135-f0d6-6203-17b5",
+        "description": "This character may reroll one of the dice To Hit each time they make a To Hit roll.",
+        "hidden": false
+      },
+      {
+        "name": "Master Tactician",
+        "id": "c6b2-601d-467e-0784",
+        "description": "At the end of this model’s activation, make a Willpower roll. If successful, you can activate another model immediately. This allows you to activate two characters consecutively, ignoring the usual sequence of play. Only works on unactivated characters",
+        "hidden": false
+      },
+      {
+        "name": "Mastermind",
+        "id": "00bd-1971-ec95-81fc",
+        "description": "At the start of the game add an extra counter for your side to the initiative bag, and remove one of your rival’s counters.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Metallic",
+        "id": "574b-b466-62c7-a026",
+        "description": "When this model receives the Stun effect, it reduces the effect applied by 1.",
+        "hidden": false
+      },
+      {
+        "name": "Order",
+        "id": "38bc-3649-51a8-3863",
+        "description": "At the end of this character’s activation, you may choose a friendly model within 5”, in line of sight, that has not yet been activated. That model may immediately take its activation. This allows you to activate two characters consecutively, ignoring the usual sequence of play.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Perfect Plan",
+        "id": "1cbd-77af-f791-9014",
+        "description": "Once per game, at the start of the Initiative phase, look into the Initiative bag and draw a counter of your choice. Alternatively, you may use this ability to counter the Perfect Plan ability from an enemy character.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Phase Shift",
+        "id": "403f-33f0-0378-8744",
+        "description": "This character can pass through solid scenery elements or miniatures when he moves as if they weren’t there, but can’t end his movement in a place where his base can’t fit (for example inside a wall), or overlapping another miniature’s position.",
+        "hidden": false
+      },
+      {
+        "name": "Rage / 1",
+        "id": "2efd-a892-4745-b488",
+        "description": "When this character recovers from KO, he immediately gains an additional 1 Power counter.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Rage / 2",
+        "id": "7412-f1ce-e25f-c449",
+        "description": "When this character recovers from KO, he immediately gains an additional 2 Power counters.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Rage / 4",
+        "id": "83e8-cf41-646e-b72d",
+        "description": "When this character recovers from KO, he immediately gains an additional 4 Power counters.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Regeneration /1",
+        "id": "09fa-3afb-5c05-0399",
+        "description": "This character recovers 1 Endurance points at the start of the Power phase. Endurance points cannot exceed their starting value in this way. Note: This skill doesn’t recover from KO.",
+        "hidden": false
+      },
+      {
+        "name": "Resistance /1 to Energy",
+        "id": "7b73-aba5-3e28-de8a",
+        "description": "When this character suffers any kind of damage of the Energy Nature, it is reduced by 1 point.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Resistance /1 to Physical",
+        "id": "17e1-0a83-d7ad-0495",
+        "description": "When this character suffers any kind of damage of the Physical Nature, it is reduced by 1 point.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Resistance /1 to Fire",
+        "id": "428b-4e35-e1b5-c4ea",
+        "description": "When this character suffers any kind of damage of the Fire Type, it is reduced by 1 point.",
+        "hidden": false,
+        "page": 0
+      },
+      {"name": "Scientific", "id": "7eb2-25c5-1b36-3ed9", "description": "Model may reroll failed Willpower rolls.", "hidden": false, "page": 0},
+      {"name": "Soldier", "id": "b8d6-7590-2fa5-5e44", "description": "Model may reroll failed Stamina rolls.", "hidden": false},
+      {"name": "Stealth", "id": "2baf-d2c9-0909-0a86", "description": "This model cannot be seen by models more than 8” away.", "hidden": false},
+      {
+        "name": "Strategist",
+        "id": "5a98-ffd4-b549-76eb",
+        "description": "At the start of each round if this character is on the game zone, the owner player can Pass on Activation one additional time per round.",
+        "hidden": false,
+        "page": 0
+      },
+      {"name": "Thermal Vision", "id": "b3cf-5ee1-863a-f9a0", "description": "This character ignores the Invisible and Stealth abilities.", "hidden": false},
+      {
+        "name": "Total Vision",
+        "id": "9f93-b81a-6461-ca29",
+        "description": "This character can draw line of sight to any point on the gaming area, ignoring effects, scenery, Invisible and Stealth rules.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Toughness / 1",
+        "id": "127f-cd9b-8a0d-2770",
+        "description": "The distance this character can be Pushed or Thrown is reduced by 1 inches. If Toughness lowers a Push or Throw distance to 0”, they are no longer considered Pushed or thrown.",
+        "hidden": false
+      },
+      {
+        "name": "Toughness / 2",
+        "id": "33a0-7c97-331e-d94a",
+        "description": "The distance this character can be Pushed or Thrown is reduced by 2 inches. If Toughness lowers a Push or Throw distance to 0”, they are no longer considered Pushed or thrown.",
+        "hidden": false
+      },
+      {
+        "name": "Wall-Crawler",
+        "id": "405e-d9b3-bb93-755f",
+        "description": "A character with this ability not have to pay the extra 1 POW to climb, and can end their movement in any part of the gaming area, even if their base does not fit.\nThe character may not end their movement in a space occupied by other character. Mark the exact position of the miniature with a counter.",
+        "hidden": false
+      },
+      {
+        "name": "Immunity to Mental",
+        "id": "988e-18b5-9527-27a8",
+        "description": "This character can’t be damaged or affected by attacks/powers with the ‘Mental’ nature or damage type.",
+        "hidden": false
+      },
+      {
+        "name": "Immunity to Radiation",
+        "id": "4f4c-1393-708e-9281",
+        "description": "This character can’t be damaged or affected by attacks/powers with the ‘Radiation’ nature or damage type.",
+        "hidden": false
+      },
+      {
+        "name": "Leadership / 4",
+        "id": "7212-f9ac-27bd-7b51",
+        "description": "Friendly models within 4\" with a base Power value lower than this character’s will gain one bonus Power counter when they are activated. A character that has this ability cannot benefit from this rule. This bonus doesn’t stack.",
+        "hidden": false
+      },
+      {
+        "name": "Leadership / 5",
+        "id": "590c-f8b0-3d2b-9806",
+        "description": "Friendly models within 5\" with a base Power value lower than this character’s will gain one bonus Power counter when they are activated. A character that has this ability cannot benefit from this rule. This bonus doesn’t stack.",
+        "hidden": false
+      },
+      {
+        "name": "Resistance /1 to Magic",
+        "id": "7ca7-8017-4c44-9d2f",
+        "description": "When this character suffers any kind of damage of the Magic Type, it is reduced by 1 point.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Resistance /1 to Pierce",
+        "id": "b4e9-528f-e9c5-3f23",
+        "description": "When this character suffers any kind of damage of the Pierce Type, it is reduced by 1 point.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Rage / 3",
+        "id": "bee4-9cdf-35b0-2bd1",
+        "description": "When this character recovers from KO, he immediately gains an additional 3 Power counters.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Resistance /1 to Physical and Fire",
+        "id": "746e-39ff-6a75-3df2",
+        "description": "When this character suffers any kind of damage of the Physical or Fire Nature, it is reduced by 1 point.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Weakness to Fire",
+        "id": "0feb-4472-dd76-2751",
+        "description": "If this character suffers any kind of damage of Fire Nature, the damage received is doubled. This rule cancels any resistance or immunity abilities the character may have.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Resistance /2 to Illusion",
+        "id": "4087-5925-4113-bd3f",
+        "description": "When this character suffers any kind of damage of the Illusion Type, it is reduced by 2 points.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Weakness to Sonic and Fire",
+        "id": "8cbf-b3cf-1ca5-0310",
+        "description": "If this character suffers any kind of damage of Sonic and Fire, the damage received is doubled. This rule cancels any resistance or immunity abilities the character may have.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Resistance /2 to Energy",
+        "id": "b5a3-78c1-85ef-0e1f",
+        "description": "When this character suffers any kind of damage of the Energy Nature, it is reduced by 2 points.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Resistance /2 to Physical",
+        "id": "a381-d8ce-101b-188e",
+        "description": "When this character suffers any kind of damage of the Physical Nature, it is reduced by 2 points.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Awkwardness/1 (Effect)",
+        "id": "5155-2d8c-3192-6c99",
+        "description": "Reduce the Energy Defense of the target by 1 point till the end of the Round or the next activation of the target, whichever comes first. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Dazzle/2 (Effect)",
+        "id": "2229-c318-dd67-348a",
+        "description": "Reduce the Mental Defense of the target by 2 points till the end of the Round or the next activation of the target, whichever comes first. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Homing (Effect)",
+        "id": "1f94-85e0-821e-2522",
+        "description": "Attacks with this special rule do not require line of sight. Measure a clear trajectory around any intervening scenery or models.",
+        "hidden": false
+      },
+      {
+        "name": "Irresistible (Effect)",
+        "id": "e032-53ec-8613-b854",
+        "description": "Ignore any Resistance the target may have to the Nature or damage type of this attack’s damage.",
+        "hidden": false
+      },
+      {
+        "name": "Penetrative (Effect)",
+        "id": "b879-b2e4-f0ca-16e5",
+        "description": "Attacks with this rule ignore scenery and cover bonuses (line of sight may be required as usual depending upon the type of the attack). If the trajectory passes through a scenery piece, that object will take damage, but will not block the attack. (Remember that scenery can´t suffer Mental Nature damage).",
+        "hidden": false
+      },
+      {
+        "name": "Pierce/3 (Effect)",
+        "id": "5a8f-1fe5-939e-5968",
+        "description": "When using this attack, continue measuring the line of the shot 3 inches beyond the target. This attack damages the target and other models or scenery in a dead straight line behind it, up to 3”. Note: You still roll to hit additional Targets.",
+        "hidden": false
+      },
+      {
+        "name": "Energy",
+        "id": "6bff-0e50-a7a3-0551",
+        "description": "Once per round, this character can use the Overload rule twice in the same Attack.",
+        "hidden": false
+      },
+      {
+        "name": "Ensnare/1 (Effect)",
+        "id": "eafa-737e-a455-9029",
+        "description": "Reduce the Speed of the target by 1 point till the end of the Round. If the Speed value is reduced to 0, the target character cannot move. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Explosive/3 (Effect)",
+        "id": "d861-993e-3575-37c9",
+        "description": "When this attack successfully hits, the attack affects an area with a radius of 3” centered on the base of the target. Each model affected, friend or foe, within that radius in all directions is hit automatically. Models within the explosive area (but not the original target) may make an Agility roll. If this roll is passed, they receive only half damage from the attack, rounding fractions down (to a minimum of 1 point of damage).",
+        "hidden": false
+      },
+      {
+        "name": "Stun/2 (Effect)",
+        "id": "3343-98d7-367c-5d89",
+        "description": "Remove 2 Power counters from the target, to a minimum of 0. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Stun/1 (Effect)",
+        "id": "d802-bc9e-bc31-5feb",
+        "description": "Remove 1 Power counter from the target, to a minimum of 0. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Stun/3 (Effect)",
+        "id": "456a-680c-1bcd-f6bd",
+        "description": "Remove 3 Power counters from the target, to a minimum of 0. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Leadership / 3",
+        "id": "96f9-b975-b624-467f",
+        "description": "Friendly models within 3\" with a base Power value lower than this character’s will gain one bonus Power counter when they are activated. A character that has this ability cannot benefit from this rule. This bonus doesn’t stack.",
+        "hidden": false
+      },
+      {
+        "name": "Explosive/1 (Effect)",
+        "id": "77d6-1515-64c4-d898",
+        "description": "When this attack successfully hits, the attack affects an area with a radius of 1” centered on the base of the target. Each model affected, friend or foe, within that radius in all directions is hit automatically. Models within the explosive area (but not the original target) may make an Agility roll. If this roll is passed, they receive only half damage from the attack, rounding fractions down (to a minimum of 1 point of damage).",
+        "hidden": false
+      },
+      {
+        "name": "Explosive/2 (Effect)",
+        "id": "2152-5aea-3072-f8a3",
+        "description": "When this attack successfully hits, the attack affects an area with a radius of 2” centered on the base of the target. Each model affected, friend or foe, within that radius in all directions is hit automatically. Models within the explosive area (but not the original target) may make an Agility roll. If this roll is passed, they receive only half damage from the attack, rounding fractions down (to a minimum of 1 point of damage).",
+        "hidden": false
+      },
+      {
+        "name": "Ensnare/2 (Effect)",
+        "id": "a10d-1fd2-af59-3381",
+        "description": "Reduce the Speed of the target by 2 points till the end of the Round. If the Speed value is reduced to 0, the target character cannot move. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Ensnare/3 (Effect)",
+        "id": "d163-c84c-4a20-6f12",
+        "description": "Reduce the Speed of the target by 3 points till the end of the Round. If the Speed value is reduced to 0, the target character cannot move. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Distract/1 (Effect)",
+        "id": "419f-268e-83d3-e18d",
+        "description": "Reduce the Physical Defense of the target by 1 points till the end of the Round or the next activation of the target, whichever comes first. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Distract/2 (Effect)",
+        "id": "1626-30c3-de06-f1e7",
+        "description": "Reduce the Physical Defense of the target by 2 points till the end of the Round or the next activation of the target, whichever comes first. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Push/6 (Effect)",
+        "id": "f263-5d01-ca0d-1f98",
+        "description": "Displace the affected miniature directly away from the attacker along the trajectory of the attack 6 inches, stopping if it comes into contact with something. If it comes into contact with something both the model and the item (it could be another model or scenery) receive 1 damage Physical/Blunt.",
+        "hidden": false
+      },
+      {
+        "name": "Push/1 (Effect)",
+        "id": "c1f8-29c3-5714-9be5",
+        "description": "Displace the affected miniature directly away from the attacker along the trajectory of the attack 1 inches, stopping if it comes into contact with something. If it comes into contact with something both the model and the item (it could be another model or scenery) receive 1 damage Physical/Blunt.",
+        "hidden": false
+      },
+      {
+        "name": "Push/2 (Effect)",
+        "id": "a40c-b0f1-944c-695e",
+        "description": "Displace the affected miniature directly away from the attacker along the trajectory of the attack 2 inches, stopping if it comes into contact with something. If it comes into contact with something both the model and the item (it could be another model or scenery) receive 1 damage Physical/Blunt.",
+        "hidden": false
+      },
+      {
+        "name": "Push/3 (Effect)",
+        "id": "f573-dbad-63a9-0c64",
+        "description": "Displace the affected miniature directly away from the attacker along the trajectory of the attack 3 inches, stopping if it comes into contact with something. If it comes into contact with something both the model and the item (it could be another model or scenery) receive 1 damage Physical/Blunt.",
+        "hidden": false
+      },
+      {
+        "name": "Push/4 (Effect)",
+        "id": "145c-cc16-45fc-08f8",
+        "description": "Displace the affected miniature directly away from the attacker along the trajectory of the attack 4 inches, stopping if it comes into contact with something. If it comes into contact with something both the model and the item (it could be another model or scenery) receive 1 damage Physical/Blunt.",
+        "hidden": false
+      },
+      {
+        "name": "Push/5 (Effect)",
+        "id": "c544-6236-59fc-4b5b",
+        "description": "Displace the affected miniature directly away from the attacker along the trajectory of the attack 5 inches, stopping if it comes into contact with something. If it comes into contact with something both the model and the item (it could be another model or scenery) receive 1 damage Physical/Blunt.",
+        "hidden": false
+      },
+      {
+        "name": "Push 2d8 (Effect)",
+        "id": "5c89-d0e6-cdea-e24b",
+        "description": "Displace the target miniature directly away from the attacker along the trajectory of the attack the result of 2d8 inches, stopping if it comes into contact with something of larger Size). Place the miniature in a place where its base will physically fit. The target miniature causes damage to other models or scenery piece equal to its size.",
+        "hidden": false
+      },
+      {
+        "name": "Resistance /2 to Physical and Energy",
+        "id": "ed2d-1882-a4c1-1f45",
+        "description": "When this character suffers any kind of damage of the Physical or Energy Nature, it is reduced by 2 points.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Weakness to Kryptonite",
+        "id": "a39a-e660-44dc-c330",
+        "description": "If this character suffers any kind of damage of Kryptonite Nature, the damage received is doubled. This rule cancels any resistance or immunity abilities the character may have.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Dazzle/1 (Effect)",
+        "id": "d73f-f099-6978-2be0",
+        "description": "Reduce the Mental Defense of the target by 1 point till the end of the Round or the next activation of the target, whichever comes first. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Awkwardness/2 (Effect)",
+        "id": "471f-e2f8-a7c5-e982",
+        "description": "Reduce the Energy Defense of the target by 2 points till the end of the Round or the next activation of the target, whichever comes first. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Pierce/1 (Effect)",
+        "id": "c439-c18a-859f-ba3e",
+        "description": "When using this attack, continue measuring the line of the shot 1 inch beyond the target. This attack damages the target and other models or scenery in a dead straight line behind it, up to 1”. Note: You still roll to hit additional Targets.",
+        "hidden": false
+      },
+      {
+        "name": "Close Combat Master",
+        "id": "d63c-384e-f1f6-de52",
+        "description": "This character may reroll one of the dice To Hit each time they make a Melee To Hit roll.",
+        "hidden": false
+      },
+      {
+        "name": "Defensive Teamwork",
+        "id": "d75b-1a11-ce1e-3df3",
+        "description": "When this character is in contact with one or more friendy characters, those friendly characters gains +1 to Physical and Energy defenses.\nThis bonus doesn’t Stack.",
+        "hidden": false
+      },
+      {"name": "Elite Figther", "id": "f4f7-243a-c95a-ef4c", "description": "This character gains +1 to their To Hit rolls on all melee attacks.", "hidden": false},
+      {
+        "name": "Fury",
+        "id": "229c-5e3c-b67f-c14f",
+        "description": "Once per game, at the beginning of this character’s activation this character can reduce all its defenses by 3 until this character's next activation. If used it gains +1 to attack damage, +2 to its Attack stat and 3 power counters. This effect lasts until the end of the round.",
+        "hidden": false
+      },
+      {"name": "Heroic Action", "id": "7e61-245a-31ff-f535", "description": "The first attack this character makes each round gains +1 to damage.", "hidden": false},
+      {
+        "name": "Power Master",
+        "id": "7376-55d7-da2e-0c78",
+        "description": "When this character uses the overload rule the base damage of the attack overloaded is increased by 1.",
+        "hidden": false
+      },
+      {
+        "name": "Power Thief",
+        "id": "2128-98f9-029f-b225",
+        "description": "When this character damages another character with a melee attack, the target loses 1 Power Counter (if possible), if this happens the attacker gains 1 Power Counter.",
+        "hidden": false
+      },
+      {
+        "name": "Power Transference X",
+        "id": "a0c1-e55e-fc13-3a00",
+        "description": "At the beginning of this character’s activation, it can transfer up to X Power Counters to a friendly model within 4’’.",
+        "hidden": false
+      },
+      {
+        "name": "Sharpshooter",
+        "id": "55ef-6383-012a-4533",
+        "description": "This character may reroll one of the dice To Hit each time they make a Ranged To Hit roll.",
+        "hidden": false
+      },
+      {"name": "Solid", "id": "d538-7c33-513c-9034", "description": "This character cannot use Defensive Improvements.", "hidden": false},
+      {"name": "Ricochet (Effect)", "id": "bcdf-3034-5beb-ca87", "description": "If hits, roll to hit another Model within 3 inches of the target", "hidden": false},
+      {
+        "name": "Explosive/4 (Effect)",
+        "id": "fc2c-f38d-c9b1-2aff",
+        "description": "When this attack successfully hits, the attack affects an area with a radius of 4” centered on the base of the target. Each model affected, friend or foe, within that radius in all directions is hit automatically. Models within the explosive area (but not the original target) may make an Agility roll. If this roll is passed, they receive only half damage from the attack, rounding fractions down (to a minimum of 1 point of damage).",
+        "hidden": false
+      },
+      {
+        "name": "Pierce/4 (Effect)",
+        "id": "ed63-7fbb-0e6b-9121",
+        "description": "When using this attack, continue measuring the line of the shot 4 inches beyond the target. This attack damages the target and other models or scenery in a dead straight line behind it, up to 4”. Note: You still roll to hit additional Targets.",
+        "hidden": false
+      },
+      {
+        "name": "Push 1d8 (Effect)",
+        "id": "014f-0632-ff11-d7a0",
+        "description": "Displace the target miniature directly away from the attacker along the trajectory of the attack the result of 1d8 inches, stopping if it comes into contact with something of larger Size). Place the miniature in a place where its base will physically fit. The target miniature causes damage to other models or scenery piece equal to its size.",
+        "hidden": false
+      },
+      {
+        "name": "Power Transference /2",
+        "id": "eb7e-72c6-ba9c-192a",
+        "description": "At the beginning of this character’s activation, it can transfer up to 2 Power Counters to a friendly model within 4’’.",
+        "hidden": false
+      },
+      {
+        "name": "Explosive/6 (Effect)",
+        "id": "58fb-7678-af26-3a77",
+        "description": "When this attack successfully hits, the attack affects an area with a radius of 6” centered on the base of the target. Each model affected, friend or foe, within that radius in all directions is hit automatically. Models within the explosive area (but not the original target) may make an Agility roll. If this roll is passed, they receive only half damage from the attack, rounding fractions down (to a minimum of 1 point of damage).",
+        "hidden": false
+      },
+      {
+        "name": "Explosive/5 (Effect)",
+        "id": "10f0-dbf6-c4a7-2872",
+        "description": "When this attack successfully hits, the attack affects an area with a radius of 5” centered on the base of the target. Each model affected, friend or foe, within that radius in all directions is hit automatically. Models within the explosive area (but not the original target) may make an Agility roll. If this roll is passed, they receive only half damage from the attack, rounding fractions down (to a minimum of 1 point of damage).",
+        "hidden": false
+      },
+      {
+        "name": "Ensnare/5 (Effect)",
+        "id": "1ceb-bbe6-db6c-eec9",
+        "description": "Reduce the Speed of the target by 5 points till the end of the Round. If the Speed value is reduced to 0, the target character cannot move. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Immunity to Illusion",
+        "id": "54a4-5793-1ffc-3f9b",
+        "description": "This character can’t be damaged or affected by attacks/powers with the ‘Illusion’ nature or damage type.",
+        "hidden": false
+      },
+      {
+        "name": "Pierce/2 (Effect)",
+        "id": "2e08-db34-602f-77b9",
+        "description": "When using this attack, continue measuring the line of the shot 2 inches beyond the target. This attack damages the target and other models or scenery in a dead straight line behind it, up to 2”. Note: You still roll to hit additional Targets.",
+        "hidden": false
+      },
+      {
+        "name": "Power Transference /3",
+        "id": "3271-4dc8-d22c-96b4",
+        "description": "At the beginning of this character’s activation, it can transfer up to 3 Power Counters to a friendly model within 4’’.",
+        "hidden": false
+      },
+      {
+        "name": "Resistance /2 to Fire",
+        "id": "8656-aaf6-0a8f-a533",
+        "description": "When this character suffers any kind of damage of the Fire Type, it is reduced by 2 points.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Distract/3 (Effect)",
+        "id": "c9b0-8361-d5fb-840f",
+        "description": "Reduce the Physical Defense of the target by 3 points till the end of the Round or the next activation of the target, whichever comes first. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Immunity to Fire",
+        "id": "3e02-b66d-a4ba-ae20",
+        "description": "This character can’t be damaged or affected by attacks/powers with the ‘Fire’ nature or damage type.",
+        "hidden": false
+      },
+      {
+        "name": "Resistance /2 to Sonic",
+        "id": "027e-a589-c097-ec17",
+        "description": "When this character suffers any kind of damage of the Sonic Type, it is reduced by 2 points.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Dazzle/3 (Effect)",
+        "id": "b509-1c64-951f-1eab",
+        "description": "Reduce the Mental Defense of the target by 3 points till the end of the Round or the next activation of the target, whichever comes first. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Regeneration /2",
+        "id": "479b-c9f7-90f2-85a2",
+        "description": "This character recovers 2 Endurance points at the start of the Power phase. Endurance points cannot exceed their starting value in this way. Note: This skill doesn’t recover from KO.",
+        "hidden": false
+      },
+      {
+        "name": "Resistance /2 to Cold",
+        "id": "0aab-7ab5-9286-028f",
+        "description": "When this character suffers any kind of damage of the Cold Type, it is reduced by 2 points.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Immunity to Physical",
+        "id": "43cc-c099-25e0-759f",
+        "description": "This character can’t be damaged or affected by attacks/powers with the ‘Physical’ nature or damage type.",
+        "hidden": false
+      },
+      {
+        "name": "Stun/4 (Effect)",
+        "id": "c292-8672-5de3-d0fe",
+        "description": "Remove 4 Power counters from the target, to a minimum of 0. This effect can stack.",
+        "hidden": false
+      },
+      {
+        "name": "Power Transference /4",
+        "id": "7a4c-4815-ed5e-66dd",
+        "description": "At the beginning of this character’s activation, it can transfer up to 4 Power Counters to a friendly model within 4’’.",
+        "hidden": false
+      },
+      {
+        "name": "Regeneration /5",
+        "id": "f04a-ac1c-b343-1d1f",
+        "description": "This character recovers 5 Endurance points at the start of the Power phase. Endurance points cannot exceed their starting value in this way. Note: This skill doesn’t recover from KO.",
+        "hidden": false
+      },
+      {
+        "name": "Resistance /2 to Mental",
+        "id": "7d0b-e56b-22cc-51f3",
+        "description": "When this character suffers any kind of damage of the Mental Nature, it is reduced by 2 points.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Resistance /1 to Supernatural",
+        "id": "3c61-2edd-7d8a-5405",
+        "description": "When this character suffers any kind of damage of the Supernatural Nature, it is reduced by 1 point.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Symbiote",
+        "id": "68b3-3df2-9b41-be30",
+        "description": "This model has Weakness to Sonic and Regeneration 1. This character can reroll one Stamina roll each Round.",
+        "hidden": false,
+        "page": 0
+      },
+      {
+        "name": "Toughness / 3",
+        "id": "3442-e700-a113-52d7",
+        "description": "The distance this character can be Pushed or Thrown is reduced by 3 inches. If Toughness lowers a Push or Throw distance to 0”, they are no longer considered Pushed or thrown.",
+        "hidden": false
+      },
+      {
+        "name": "Resistance /1 to Mental",
+        "id": "c17d-4ce9-ef77-5b4a",
+        "description": "When this character suffers any kind of damage of the Mental Nature, it is reduced by 1 point.",
+        "hidden": false,
+        "page": 0
+      }
+    ]
+  }
+}
